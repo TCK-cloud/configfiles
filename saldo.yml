@@ -6,12 +6,14 @@ spring:
   application:
     name: saldo
 eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    hostname: localhost
   client:
     serviceUrl:
-      defaultZone: http://127.0.0.1:8761/eureka
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
     region: default
     registryFetchIntervalSeconds: 5
     availabilityZones: 
       default: ${APPLICATION_DOMAIN:${DOMAIN:defaultZone}} 
-  instance:
-    leaseRenewalIntervalInSeconds: 10
+  
