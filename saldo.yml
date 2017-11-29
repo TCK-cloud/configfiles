@@ -1,0 +1,13 @@
+server:
+  port: 8081
+  context-path: /saldo
+spring:
+  application:
+    name: saldo
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+    
