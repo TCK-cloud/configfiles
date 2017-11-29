@@ -8,3 +8,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://127.0.0.1:8761/eureka/
+    region: default
+    registryFetchIntervalSeconds: 5
+    availabilityZones: 
+      default: ${APPLICATION_DOMAIN:${DOMAIN:defaultZone}} 
+  instance:
+    leaseRenewalIntervalInSeconds: 10
