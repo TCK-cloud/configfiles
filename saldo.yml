@@ -1,12 +1,12 @@
 server:
   port: 8081
-  context-path: /saldo
-  address: 127.0.0.1
+  servlet:
+    context-path: /saldo
 spring:
   application:
     name: saldo
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://localhost:8761/eureka/
     enabled: true
