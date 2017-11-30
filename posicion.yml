@@ -1,6 +1,5 @@
 server:
   port: 8082
-  context-path: /posicion
 spring:
   application:
     name: posicion
