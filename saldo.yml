@@ -1,6 +1,5 @@
 server:
   port: 8081
-  context-path: /saldo
 spring:
   application:
     name: saldo
