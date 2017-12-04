@@ -5,4 +5,4 @@ spring:
     name: saldo
 management:
   security:
-    enabled:
+    enabled: false
